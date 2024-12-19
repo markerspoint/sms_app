@@ -1,0 +1,112 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background color and basic font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #36393f; /* Discord dark background color */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Heading styling */
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Form container */
+form {
+    background-color: #2f3136; /* Darker background for the form */
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for name and username fields */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Space between the two inputs */
+    margin-bottom: 15px;
+}
+
+/* Input and label styling */
+label {
+    color: #b9bbbe;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #7289da;
+    border-radius: 5px;
+    background-color: #40444b;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7289da; /* Discord blue color */
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #5f73a1; /* Slightly darker blue on hover */
+}
+
+/* Error message styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+ul li {
+    color: #ff4d4d; /* Red color for errors */
+    font-size: 0.9rem;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #7289da;
+    outline: none;
+}
+
+/* Add some margin to the paragraph that contains the sign-in link */
+form p {
+    margin-top: 20px; /* Adjust the space between the form and the text */
+    text-align: center; /* Center the text */
+}
+
+/* Style for the sign-in link */
+#signin-link {
+    color: #7289da; /* Discord blue color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#signin-link:hover {
+    text-decoration: underline; /* Underline on hover for better interaction */
+}
